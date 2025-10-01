@@ -20,7 +20,7 @@ tools: ## Verifica que las herramientas necesarias estén instaladas
 build: ## Construye los artefactos necesario
 	@mkdir -p $(OUT_DIR)
 
-run: build ##Ejecutar el auditor
+run: build ## Ejecutar el auditor
 	@$(SRC_DIR)/auditor.sh
 
 test:
