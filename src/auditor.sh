@@ -2,10 +2,6 @@
 # auditor.sh - Script para auditar sockets y procesos
 set -euo pipefail
 
-# Crear directorio de salida
-OUT_DIR="out"
-mkdir -p "$OUT_DIR"
-
 # trap para capturar errores
 trap 'echo "Error en linea $LINENO"' ERR
 
