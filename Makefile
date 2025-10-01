@@ -17,7 +17,7 @@ help: ## Muestra los targets disponibles
 tools: ## Verifica que las herramientas necesarias estén instaladas
 	@$(SRC_DIR)/check_tools.sh
 
-build:
+build: ## Construye los artefactos necesario
 	@mkdir -p $(OUT_DIR)
 
 run: build ##Ejecutar el auditor

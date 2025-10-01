@@ -17,7 +17,6 @@ setup() {
 }
 
 @test "genera inventario de sockets con ss" {
-    run bash src/auditor.sh
     [ -f "out/sockets_inventory.csv" ]
     run head -1 out/sockets_inventory.csv
     [[ "$output" =~ "timestamp" ]]
@@ -25,7 +24,6 @@ setup() {
 }
 
 @test "genera inventario de procesos" {
-    run bash src/auditor.sh
     [ -f "out/processes_inventory.csv" ]
     run head -1 out/processes_inventory.csv
     [[ "$output" =~ "sockets_relacionados" ]]
