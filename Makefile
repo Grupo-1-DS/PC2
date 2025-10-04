@@ -1,4 +1,4 @@
-RELEASE ?= 2.0.0
+RELEASE ?= 3.0.0
 OUT_DIR ?= out
 SRC_DIR := src
 DIST_DIR := dist
