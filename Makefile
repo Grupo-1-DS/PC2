@@ -1,4 +1,4 @@
-RELEASE ?= 1.0.0
+RELEASE ?= 2.0.0
 OUT_DIR ?= out
 SRC_DIR := src
 DIST_DIR := dist
@@ -6,10 +6,6 @@ TEST_DIR := tests
 TOOLS := ss journalctl kill pgrep awk sed jq nc python3
 
 export RELEASE OUT_DIR SRC_DIR TOOLS
-export SIM_PORTS ?= 8080,8081,8082
-export SIM_DURATION ?= 30
-export JOURNAL_SINCE ?= 5m
-export JOURNAL_FILTER ?= sim_
 
 .PHONY: help tools build run simulate analyze diagnose test pack clean verify-logs
 

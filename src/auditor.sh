@@ -3,7 +3,6 @@
 set -euo pipefail
 
 # Variables de configuración
-OUT_DIR="${OUT_DIR:-out}"
 ANALISIS_TIMEFRAME="${ANALISIS_TIMEFRAME:-5 minutes ago}"
 SIMULACION_ENABLED="${SIMULACION_ENABLED:-true}"
 INCIDENTES_THRESHOLD="${INCIDENTES_THRESHOLD:-20}"
