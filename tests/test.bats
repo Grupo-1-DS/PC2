@@ -29,8 +29,8 @@ setup() {
     [[ "$output" =~ "sockets_relacionados" ]]
 }
 
-
 @test "usa trap para manejo de errores" {
     run grep "trap" src/auditor.sh
     [ "$status" -eq 0 ]
 }
+
