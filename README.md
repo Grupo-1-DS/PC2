@@ -16,7 +16,7 @@
 
 | Target       | Descripción                                     |
 |----------------|-------------------------------------------------|
-| ```help```       | Verifica que todas las herramientas necesarias estén instaladas  |
+| ```help```       | Muestra los targets disponibles y su descripción  |
 | ```tools```        |Verifica que todas las herramientas necesarias estén instaladas   |
 | ```build```     | Prepara el entorno: crea el directorio de salida y da permisos de ejecución a los scripts. |
 | ```run```     | Ejecuta el auditor principal ```auditor.sh``` después de construir el entorno.  |
