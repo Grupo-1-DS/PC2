@@ -10,3 +10,16 @@
 | DIST_DIR     | Permite distribuir el código del proyecto          |
 | TEST_DIR       | Permite ejecutar los tests de validación        |
 | TOOLS   | Permite instalar las dependencias del proyecto   |
+
+
+## Targets disponibles
+
+| Target       | Descripción                                     |
+|----------------|-------------------------------------------------|
+| ```help```       | Verifica que todas las herramientas necesarias estén instaladas  |
+| ```tools```        |Verifica que todas las herramientas necesarias estén instaladas   |
+| ```build```     | Prepara el entorno: crea el directorio de salida y da permisos de ejecución a los scripts. |
+| ```run```     | Ejecuta el auditor principal ```auditor.sh``` después de construir el entorno.  |
+| ```test```       | Permite ejecutar los tests de validación        |
+| ```pack```   | Empaqueta el proyecto en un archivo ```.tar.gz``` para distribución.  |
+| ```clean```   | Elimina los archivos generados en el directorio de salida  |
