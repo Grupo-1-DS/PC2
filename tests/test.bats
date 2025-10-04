@@ -33,4 +33,3 @@ setup() {
     run grep "trap" src/auditor.sh
     [ "$status" -eq 0 ]
 }
-
