@@ -20,7 +20,7 @@ build: ## Construye los artefactos necesario
 	@mkdir -p $(OUT_DIR)
 	@chmod +x $(SRC_DIR)/*.sh
 
-run: build ## Ejecutar el auditor base
+run: build ## Ejecutar el auditor
 	@$(SRC_DIR)/auditor.sh
 
 test: build ## Ejecuta tests de validación
