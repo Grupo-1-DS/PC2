@@ -1,4 +1,4 @@
-RELEASE ?= 2.0.0
+RELEASE ?= 3.0.0
 OUT_DIR ?= out
 SRC_DIR := src
 DIST_DIR := dist
@@ -25,6 +25,10 @@ run: build ## Ejecutar el auditor
 
 test: build ## Ejecuta tests de validación
 	@$(TEST_DIR)/test.bats
+
+pack: ## Empaqueta el release
+	@mkdir -p $(DIST_DIR)
+	@tar -czf $(DIST_DIR)/auditor-$(RELEASE).tar.gz $(SRC_DIR) $(TEST_DIR) 
 
 clean: ## Limpia archivos generados
 	@rm -rf $(OUT_DIR)/*
